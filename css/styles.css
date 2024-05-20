@@ -24,7 +24,7 @@
     }
 
     main {
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -89,4 +89,24 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    max-width: 600px;
+}
+main h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+main ul {
+    margin: 0;
+    margin-bottom: 100px;
+}
+main form fieldset {
+    box-shadow: 2px 2px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.submitbutton {
+    border: 1px solid black;
+    color: black;
+    box-shadow: 2px 2px;
+    margin-bottom: 100px;
 }
