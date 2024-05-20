@@ -19,6 +19,10 @@
         text-align: center;
     }
 
+    .pageHeading {
+        white-space: nowrap;
+    }
+
     main {
         width: 70%;
     }
@@ -57,7 +61,6 @@
     /* IE10+/Edge */
     user-select: none;
     /* Standard */
-    white-space: nowrap;
     margin: 0;
     padding: 0;
 }
