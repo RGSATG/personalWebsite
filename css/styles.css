@@ -3,12 +3,50 @@
     background-color: rgb(253, 239, 220);
 }
 
-header div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header div {
+        display: block;
+        text-align: center;
+    }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header div {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header div {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Header styling begins here */
+
 
 .pageHeading {
     -webkit-user-select: none;
@@ -42,8 +80,10 @@ header div{
     padding: 0 10px;
 }
 
+/* Main styling begins here */
+
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 100px;
+    margin: 0 auto;
 }
