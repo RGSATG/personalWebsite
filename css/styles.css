@@ -85,8 +85,13 @@ a {
     border: 1px solid black;
 }
 
-.navList li a {
+.navLink {
     padding: 0 10px;
+}
+
+.navLink:hover {
+    background-color: black;
+    color: white;
 }
 
 /* Main styling begins here */
