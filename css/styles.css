@@ -14,6 +14,10 @@ body {
     flex-direction: column;
   }
 
+section {
+    margin: 10px 0;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -28,11 +32,21 @@ ul {
     text-decoration: underline;
 }
 
+.group {
+    margin-bottom: 10px;
+}
+
+.noWrap {
+    text-wrap: nowrap;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
 /* Header styling begins here */
+.nav {
+    display: flex;
+}
 
 .pageHeading {
     -webkit-user-select: none;
@@ -43,24 +57,27 @@ ul {
     /* IE10+/Edge */
     user-select: none;
     /* Standard */
+    text-align: center;
+    text-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .navList {
+    display: inline;
     white-space: nowrap;
-    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .navList li {
-    list-style: none;
-    display: inline-block;
-    border: 1px solid black;
+    display: inline;
 }
 
 .navLink {
+    display: inline-block;
     padding: 0 10px;
+    border: 1px solid black;
 }
 
 .navLink:hover {
@@ -74,17 +91,11 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
 }
-main h2 {
-    margin: 0;
-    margin-bottom: 10px;
-}
-main ul {
-    margin: 0;
-    margin-bottom: 100px;
-}
+
 main form fieldset {
     box-shadow: 2px 2px;
     margin: 0;
@@ -94,7 +105,12 @@ main form fieldset {
     border: 1px solid black;
     color: black;
     box-shadow: 2px 2px;
-    margin-bottom: 100px;
+    padding: 2px;
+    border-radius: 0;
+}
+
+img {
+    width: 100%;
 }
 
 /* Footer styling begins here */
@@ -119,12 +135,9 @@ footer {
 /* media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    header div {
-        display: block;
-        text-align: center;
-    }
-
-    .navList {
+    .nav {
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 10px;
     }
     
@@ -135,40 +148,31 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    header div {
-        display: block;
-        text-align: center;
-    }
-
-    .pageHeading {
-        white-space: nowrap;
-    }
-
-    .navList {
+    .nav {
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 10px;
     }
 
     main, footer {
-        width: 70%;
+        width: 80%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     main, footer {
-        width: 50%;
+        width: 70%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    header div {
-        display: flex;
+    .nav {
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 10px
-    }
-    .navList {
+        padding: 0 10px;
         margin-bottom: 0;
     }
 }

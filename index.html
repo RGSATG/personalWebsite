@@ -10,12 +10,12 @@
 
 <body>
   <header>
-    <div>
+    <div class="nav">
       <h1 class="pageHeading"><a href="/index.html">Homepage of Alexander Moser</a></h1>
       <ul class="navList">
         <li><a href="pages/about.html" class="navLink">About</a></li>
         <li><a href="pages/contact.html" class="navLink">Contact</a></li>
-        <li><a href="#dog" class="navLink">Dog</a></li>
+        <li><a href="#dogSection" class="navLink">Dog</a></li>
       </ul>
     </div>
     <hr>
@@ -23,37 +23,43 @@
 
 
   <main>
-    <h2>Quick facts about me</h2>
-    <ul>
-      <li>I am 20 years old</li>
-      <li>I am a medical student based in Vienna</li>
-      <li>I am building this website to learn programming</li>
-    </ul>
-    <form action="https://middlefinger.avantarte.com">
-      <fieldset>
-        <legend>What do you think</legend>
-        <div id="container">
-          <span>
-            <label><input id="curious" name="opinionselector" type="radio" checked />I'm
-              curious</label>
-            <label><input id="dontcare" name="opinionselector" type="radio" />I
-              don't care</label>
-          </span>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>What do you like more</legend>
-        <div id="container">
-          <span>
-            <label><input id="curious" name="cuisineselector" type="radio" checked />Pizza</label>
-            <label><input id="dontcare" name="cuisineselector" type="radio" />Pasta</label>
-          </span>
-        </div>
-      </fieldset>
-      <input class="submitbutton" type="submit" />
-    </form>
-    <h3>Have a look at this lovely dog</h3>
-    <img src="./img/dog.jpg" alt="cute dog" id="dog">
+    <section id="introSection">
+      <div class="group">
+      <h2>Quick facts about me</h2>
+      <ul>
+        <li>I am 20 years old</li>
+        <li>I am a medical student based in Vienna</li>
+        <li>I am building this website to learn programming</li>
+      </ul>
+    </div>
+      <form action="https://middlefinger.avantarte.com">
+        <fieldset>
+          <legend>What do you think</legend>
+          <div id="container">
+            <span>
+              <label><input id="curious" name="opinionselector" type="radio" checked />I'm
+                curious</label>
+              <label><input id="dontcare" name="opinionselector" type="radio" />I
+                don't care</label>
+            </span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>What do you like more</legend>
+          <div id="container">
+            <span>
+              <label><input id="curious" name="cuisineselector" type="radio" checked />Pizza</label>
+              <label><input id="dontcare" name="cuisineselector" type="radio" />Pasta</label>
+            </span>
+          </div>
+        </fieldset>
+        <input class="submitbutton" type="submit" />
+      </form>
+    </section>
+    <section id="dogSection">
+      <h3>Have a look at this lovely dog</h3>
+      <img src="./img/dog.jpg" alt="cute dog">
+    </section>
   </main>
 
   <footer>
